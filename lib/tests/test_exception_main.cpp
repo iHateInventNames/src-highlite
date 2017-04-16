@@ -30,7 +30,7 @@ int main() {
     // cout << "OUTPUT: " << testException << endl;
     os << testException;
 
-    string causedby = boost::regex_error(boost::regex_constants::error_bad_pattern).what();
+    string causedby = std::regex_error(std::regex_constants::error_bad_pattern).what();
 
     assertEquals("foo:10: test exception\n" + stdBoostCausedBy("foo", "10"), os.str());
 

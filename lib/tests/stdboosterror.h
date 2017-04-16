@@ -3,8 +3,8 @@
 
 #include <boost/regex/pattern_except.hpp>
 
-static boost::regex_error
-        std_boost_exception(boost::regex_error(boost::regex_constants::error_bad_pattern));
+static std::regex_error
+        std_boost_exception(std::regex_error(std::regex_constants::error_bad_pattern));
 
 /**
  * returns the string representing a standard exception (which
